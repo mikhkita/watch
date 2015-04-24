@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="keywords" content=''>
+	<meta name="description" content=''>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+
+	<meta name="viewport" content="width=1100">
+
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/jssor.js"></script>
+	<script type="text/javascript" src="js/jssor.slider.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/swipe.js"></script>
+	<script type="text/javascript" src="js/carousel.lite.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/KitProgress.js"></script>
+	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/device.js"></script>
+	<script type="text/javascript" src="js/KitSend.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+	<ul class="ps-lines">
+		<li class="v" style="margin-left:-526px"></li>
+		<li class="v" style="margin-left:525px"></li>
+		<li class="v" ></li>
+	</ul>
+	<div class="b b-1">
+		<div class="b-back-white"></div>
+		<div class="b-block">
+			<div class="header-back"></div>
+			<div class="header">
+				<div class="left">
+					<a href="#"><img src="i/logo.png"></a>
+				</div>
+				<div class="left left-1">
+					<p>Часы с GPS-трекером<br> для безопасности Ваших детей</p>
+					<span>Доставка по всей России</span>
+				</div>
+				<div class="right">
+					<p>Вход в мониторинг:</p>
+					<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-1">
+						<input type="text" class="first" id="login" name="login" placeholder="Логин" required/>
+						<input type="text" id="password" name="password" placeholder="Пароль" required/>
+						<a class="password" href="#">Забыли пароль?</a>
+						<a class="in" class="ajax" href="#">вход</a>
+					</form>
+				</div>
+				<div class="right-1">
+					<p>Бесплатный звонок по РФ</p>
+					<h6>8-800-555-55-55</h6>
+					<a href="#" class="fancy" data-block="#b-popup-3">Заказать обратный звонок</a>
+				</div>
+				<div>
+					<img class="red" src="i/red.png">
+				</div>
+				<img style="position: absolute; top:373px; left: 50%;
+				margin-left: -223px;" src="i/girl.png">
+				<ul class="back_cloud"> 
+					<li style="background-image: url(i/b_1/cloud/5.png); width: 172px; height: 134px; position:absolute; top: 436px; left: -104px;"></li>
+					<li style="background-image: url(i/b_1/cloud/6.png); width: 194px; height: 124px; position:absolute; top: 171px; left: 80px;"></li>
+					<li style="background-image: url(i/b_1/cloud/7.png); width: 172px; height: 134px; position:absolute; top: 352px; left:976px;"></li>
+				</ul>
+				<ul class="point">
+					<li style="background-image: url(i/b_1/pip/1.png); width: 60px; height: 63px; position: absolute; top:348px; left: 4px;"></li>
+					<li style="background-image: url(i/b_1/pip/2.png); width: 57px; height: 66px; position: absolute; top:208px; left: 200px;"></li>
+					<li style="background-image: url(i/b_1/pip/3.png); width: 57px; height: 70px; position: absolute; top:187px; left: 675px;"></li>
+					<li style="background-image: url(i/b_1/pip/4.png); width: 57px; height: 66px; position: absolute; top:234px; left: 938px;"></li>
+					<li style="background-image: url(i/b_1/pip/5.png); width: 67px; height: 58px; position: absolute; top:548px; left: 1009px;"></li>
+				</ul>
+				<ul class="cloud">
+					<li style="width: 274px; height:133px; position: absolute; top:565px; left: 48px; background-image: url(i/b_1/chat/1.png);"><p style="padding-right: 18px;">Где сейчас<br> мой ребенок?</p></li>
+					<li style="background-image: url(i/b_1/chat/2.png); width: 273px; height: 204px; position: absolute; top:326px; left: 72px; padding-left: 13px;"><p>Почему ребенок<br> не берет трубку?</p></li>
+					<li style="background-image: url(i/b_1/chat/3.png); height: 174px; width: 285px; position: absolute; top:171px; left: 308px; z-index: 2; padding-left: 10px;"><p>Не прогуливает ли мой<br> ребенок школу сейчас?</p></li>
+					<li style="background-image: url(i/b_1/chat/4.png); height: 204px; width: 273px; position: absolute; top: 225px; left: 662px;"><p>В безопасности ли<br> мой ребенок сейчас?</p></li>
+					<li style="background-image: url(i/b_1/chat/5.png); height: 168px; width: 273px; position: absolute; top: 461px; left: 745px;"><p style="letter-spacing: -1px; padding-right: 10px;">Почему мой ребенок<br> задерживается? Должен<br> был давно прийти домой</p></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="b b-2">
+		<div class="b-block">
+			<h2>оставьте заявку и мы решим эти проблемы навсегда</h2>
+			<form action="kitsend.php" method="POST" id="b-form-2" data-block="#b-popup-1">
+				<input type="text" id="phone" name="phone" placeholder="Телефон" required/>
+				<input type="text" class="email" id="email" name="email" placeholder="E-mail" required/>
+				<input type="hidden" name="subject" value="Заказ часов"/>
+				<input type="submit" class="ajax b-orange-butt" value="Оставить заявку">
+			</form>
+		</div>
+	</div>
+	<div class="b b-3">
+		<div class="b-block">
+			<img class="route-1" src="i/route-1.png">
+			<div style="height: 447px;">
+				<div class="left">
+					<h3>Часы с GPS-датчиком<br> для безопасности Вашего ребенка</h3>
+					<img src="i/white-line.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.<br><br> 
+
+					Ut ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. </p>
+				</div>
+				<div class="right">
+					<div>
+						<img src="i/clock.png">
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<p>Цена: <b class="count">1500 руб.</b><b class="min">1000</b><b class="rub">руб.</b>*</p>
+				<i>*В стоимость входит бесплатный доступ к карте на месяц</i>
+				<a href="#" class="b-white-butt">подробнее</a>
+				<a href="#" class="b-orange-butt fancy" data-block="#b-popup-3">Заказать</a>
+				<img style="position: absolute; left: 471px; top: 65px;"src="i/price-arrow.png">
+			</div>
+		</div>
+	</div>
+	<div class="b b-4">
+		<div class="b-back">
+			<div class="b-block">
+				<h2>Преимущества часов с GPS:</h2>
+				<div class="good">
+					<img src="i/ok.png">
+					<p style="color: #30B048;">С часами:</p>
+					<p style="float:right; color: #db3b53;">Без часов:</p>
+					<img style="float:right; margin-top: 13px;" src="i/cross.png">
+				</div>
+				<img style="position: absolute; left: 50%; margin-left: -184px; top: 50%; margin-top: -182px;" src="i/scales.png">
+				<ul>
+					<li class="clearfix" style="width: 942px;">
+						<img style="float: left;" src="i/b_3/1.png">
+						<p style="float: left; margin-top: 16px;">Вы всегда знаете<br> где Ваш ребенок</p>
+						<p style="float: right;">Не отследить прогулы<br> в школе</p>
+						<img style="float: right;" src="i/b_3/8.png">
+					</li>
+					<li class="clearfix" style="width: 1050px;">
+						<img style="float: left;" src="i/b_3/2.png">
+						<p style="float: left; margin-top: 8px;">Уверенность что<br> сможете быть рядом, если<br> понадобится</p>
+						<p style="float: right;">Волнительно отпускать в<br> незнакомые места</p>
+						<img style="float: right;" src="i/b_3/7.png">
+					</li>
+					<li class="clearfix" style="width: 940px;">
+						<img style="float: left;" src="i/b_3/3.png">
+						<p style="float: left; margin-top: -6px;">Не страшно если<br> потеряется, Вы всегда<br> сможете его найти и<br> забрать домой</p>
+						<p style="float: right;">Тревога если<br> задерживается или не<br> отвечает по телефону</p>
+						<img style="float: right;" src="i/b_3/6.png">
+					</li>
+					<li class="clearfix" style="width: 808px;">
+						<img style="float: left;" src="i/b_3/4.png">
+						<p style="float: left;">Может гулять где<br> хочет, он всегда под<br> присмотром</p>
+						<p style="float: right;">У ребенка отсутствует чувство<br>что за ним присматривают, а<br> следовательно возникает<br> больше соблазнов</p>
+						<img style="float: right;" src="i/b_3/5.png">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="b b-5">
+		<div class="b-block">
+			<ul>
+				<li>
+					<div><img style="margin-top: 59px; margin-bottom: 18px;" src="i/b_4/1.png"></div>
+					<i>До 48 часов без<br> подзарядки</i>
+				</li>
+				<li>
+					<div><img style="margin-top: 32px; margin-bottom: 5px;" src="i/b_4/2.png"></div>
+					<i>Яркий дизайн -<br>Ваш ребенок с<br> удовольствием будет<br> их носить</i>
+				</li>
+				<li>
+					<i style="margin-top: 40px; display: block; margin-bottom: 14px;">Для него</i>
+					<div><img style="margin-bottom: 10px;" src="i/b_4/3.png"></div>
+					<i>Для неё</i>
+				</li>
+				<li>
+					<div><img style="margin-top: 49px; margin-bottom: 12px;" src="i/b_4/4.png"></div>
+					<i>Компактность</i>
+				</li>
+				<li>
+					<div><img style="margin-top: 39px; margin-bottom: 10px;" src="i/b_4/5.png"></div>
+					<i>Не нужны<br>технические<br>знания</i>
+				</li>
+				<li>
+					<div><img style="margin-top: 37px; margin-bottom: 10px;" src="i/b_4/6.png"></div>
+					<i>Легко<br> настраивать</i>
+				</li>
+				<li>
+					<div><img style="margin-top: 37px; margin-bottom: 18px;" src="i/b_4/7.png"></div>
+					<i>Долговечный<br>материал</i>
+				</li>
+				<li>
+					<div><img style="margin-top: 38px; margin-bottom: 15px;" src="i/b_4/8.png"></div>
+					<i>Гарантии и<br> возврат</i>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="b b-6">
+		<div class="blue"><h2>принцип работы часов:</h2></div>
+		<div class="b-block">
+			<div class="left left-1"></div>
+			<div class="left left-2"></div>
+			<img class="line" src="i/line.png">
+			<img class="round" src="i/round-1.png">
+			<img class="round-2" src="i/round-2.png">
+			<img class="watch" src="i/watch.png">
+		</div>
+	</div>
+	<div class="b b-7">
+		<div class="b-block">
+			<h2>Как сделать заказ?</h2>
+			<img class="route" src="i/route-2.png">
+			<ul class="clearfix">
+				<li style="margin-right: 66px;">
+					<img style="margin-bottom: 50px; margin-top: 26px;" src="i/b_6/1.png">
+					<div class="sircle"><p>1</p></div>
+					<h6  style="margin-bottom: 8px;">Оставьте заявку</h6>
+					<a href="#" class="fancy" data-block="#b-popup-3">заявка</a>
+					<p style="margin-top: 10px;">или позвоните по<br>номеру:</p>
+					<b>8-800-555-55-55</b>
+				</li>
+				<li style="margin-right: 76px; margin-top: 15px;">
+					<img style="margin-bottom: 61px;" src="i/b_6/2.png">
+					<div class="sircle"><p>2</p></div>
+					<h6>Консультация</h6>
+					<p style="margin-top: 20px;">Наш специалист<br> ответит на все Ваши<br> вопросы</p>
+				</li>
+				<li style="margin-right: 54px;  margin-top: 54px;">
+					<img style="margin-bottom: 57px;" src="i/b_6/3.png">
+					<div class="sircle"><p>3</p></div>
+					<h6>Доставка</h6>
+					<p style="margin-top: 14px;">Осуществляем<br> доставку по всей РФ</p>
+				</li>
+				<li>
+					<img style="margin-bottom: 78px;" src="i/b_6/4.png">
+					<div class="sircle"><p>4</p></div>
+					<h6>Оплата</h6>
+					<p style="margin-top: 20px;">Оплата при получении<br>на почте или курьеру</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="b b-8">
+		<div class="blue-1"><h2>отзывы</h2></div>
+		<div class="b-block">
+			<img class="route-3" src="i/route-3.png">
+			<div class="left-1 clearfix">
+				<img class="girl-1" src="i/comment-1.png">
+				<h5>Имя Фамилия</h5>
+				<h6>01.01.2015</h6>
+				<img class="grey-line" src="i/grey-line.png">
+				<img class="quote-1" src="i/quote-1.png">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.<br><br> 
+
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. </p>
+			</div>
+			<div class="left-2">
+				<img class="girl-2" src="i/comment-2.png">
+				<h5>Имя Фамилия</h5>
+				<h6>01.01.2015</h6>
+				<img class="grey-line-2" src="i/grey-line-2.png">
+				<img class="quote-2" src="i/quote-2.png">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.<br><br> 
+
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. </p>
+			</div>
+		</div>
+	</div>
+	<div class="b b-9">
+		<div class="b-back">
+			<div class="b-block clearfix">
+				<div class="left">
+					<h3>остались вопросы?</h3>
+					<p>Заполните заявку, и наш специалист свяжется с вами в течение 10 минут</p>
+				</div>
+				<div class="right b-form">
+					<h2>Оставьте заявку</h2>
+					<form action="kitsend.php" method="POST" id="b-form-3" data-block="#b-popup-1">
+						<input type="text" class="name" id="name" name="name" placeholder="Ваше имя" required/>
+						<input type="text" class="phone" id="phone" name="phone" placeholder="Ваш телефон" required/>
+						<input type="text" class="email" id="email" name="email" placeholder="Ваш email" required/>
+						<input type="hidden" name="subject" value="Заказ часов"/>
+						<input type="submit" class="ajax b-orange-butt" value="отправить">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b b-10">
+		<div class="b-map" id="map_canvas"></div>
+		<h2>контакты</h2>
+		<div class="b-map-desc">
+			<p>Адрес...<br>Телефоны...</p>
+		</div>
+	</div>
+	<div class="b b-11">
+		<div class="b-block">
+			<div class="left left-1">
+				<a href="#"><img src="i/logo.png"></a>
+			</div>
+			<div class="left left-2">
+				<a href="#"><h5>Политика конфиденциальности</h5></a>
+				<a href="#"><h6>Разработка сайта: <b>LineUp</b></h6></a>
+			</div>
+			<div class="right">
+				<p>Бесплатный звонок по РФ<br>
+				<b>8-800-555-55-55</b></p>
+			</div>
+		</div>
+	</div>
+	<div style="display:none;">
+		<div id="b-popup-3">
+			<div class="right b-form">
+				<h2>Оставьте заявку</h2>
+				<form action="kitsend.php" method="POST" id="b-form-4" data-block="#b-popup-1">
+					<input type="text" class="name" id="name" name="name" placeholder="Ваше имя" required/>
+					<input type="text" class="phone" id="phone" name="phone" placeholder="Ваш телефон" required/>
+					<input type="text" class="email" id="email" name="email" placeholder="Ваш email" required/>
+					<input type="hidden" name="subject" value="Заказ часов"/>
+					<input type="submit" class="ajax b-orange-butt" value="отправить">
+				</form>
+			</div>
+		</div>
+		<div id="b-popup-1">
+			<div class="b-thanks b-popup">
+				<h3>Спасибо!</h3>
+				<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
+				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+			</div>
+		</div>
+		<div id="b-popup-error">
+			<div class="b-thanks b-popup">
+				<h3>Ошибка отправки!</h3>
+				<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
+				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
