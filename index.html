@@ -41,55 +41,57 @@
 	</ul>
 	<div class="b b-1">
 		<div class="b-back-white"></div>
-		<div class="b-block">
-			<div class="header-back"></div>
-			<div class="header">
-				<div class="left">
-					<a href="#"><img src="i/logo.png"></a>
+		<div class="header-back">
+			<div class="b-block">
+				<div class="header">
+					<div class="left">
+						<a href="#"><img src="i/logo.png"></a>
+					</div>
+					<div class="left left-1">
+						<p>Часы с GPS-трекером<br> для безопасности Ваших детей</p>
+						<span>Доставка по всей России</span>
+					</div>
+					<div class="right">
+						<p>Вход в мониторинг:</p>
+						<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-1">
+							<input type="text" class="first" id="login" name="login" placeholder="Логин" required/>
+							<input type="text" id="password" name="password" placeholder="Пароль" required/>
+							<a class="password" href="#">Забыли пароль?</a>
+							<a class="in b-orange-butt" class="ajax" href="#">вход</a>
+						</form>
+					</div>
+					<div class="right-1">
+						<p>Бесплатный звонок по РФ</p>
+						<h6>8-800-555-55-55</h6>
+						<a href="#" class="fancy" data-block="#b-popup-3">Заказать обратный звонок</a>
+					</div>
 				</div>
-				<div class="left left-1">
-					<p>Часы с GPS-трекером<br> для безопасности Ваших детей</p>
-					<span>Доставка по всей России</span>
-				</div>
-				<div class="right">
-					<p>Вход в мониторинг:</p>
-					<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-1">
-						<input type="text" class="first" id="login" name="login" placeholder="Логин" required/>
-						<input type="text" id="password" name="password" placeholder="Пароль" required/>
-						<a class="password" href="#">Забыли пароль?</a>
-						<a class="in" class="ajax" href="#">вход</a>
-					</form>
-				</div>
-				<div class="right-1">
-					<p>Бесплатный звонок по РФ</p>
-					<h6>8-800-555-55-55</h6>
-					<a href="#" class="fancy" data-block="#b-popup-3">Заказать обратный звонок</a>
-				</div>
-				<div>
-					<img class="red" src="i/red.png">
-				</div>
-				<img style="position: absolute; top:373px; left: 50%;
-				margin-left: -223px;" src="i/girl.png">
-				<ul class="back_cloud"> 
-					<li style="background-image: url(i/b_1/cloud/5.png); width: 172px; height: 134px; position:absolute; top: 436px; left: -104px;"></li>
-					<li style="background-image: url(i/b_1/cloud/6.png); width: 194px; height: 124px; position:absolute; top: 171px; left: 80px;"></li>
-					<li style="background-image: url(i/b_1/cloud/7.png); width: 172px; height: 134px; position:absolute; top: 352px; left:976px;"></li>
-				</ul>
-				<ul class="point">
-					<li style="background-image: url(i/b_1/pip/1.png); width: 60px; height: 63px; position: absolute; top:348px; left: 4px;"></li>
-					<li style="background-image: url(i/b_1/pip/2.png); width: 57px; height: 66px; position: absolute; top:208px; left: 200px;"></li>
-					<li style="background-image: url(i/b_1/pip/3.png); width: 57px; height: 70px; position: absolute; top:187px; left: 675px;"></li>
-					<li style="background-image: url(i/b_1/pip/4.png); width: 57px; height: 66px; position: absolute; top:234px; left: 938px;"></li>
-					<li style="background-image: url(i/b_1/pip/5.png); width: 67px; height: 58px; position: absolute; top:548px; left: 1009px;"></li>
-				</ul>
-				<ul class="cloud">
-					<li style="width: 274px; height:133px; position: absolute; top:565px; left: 48px; background-image: url(i/b_1/chat/1.png);"><p style="padding-right: 18px;">Где сейчас<br> мой ребенок?</p></li>
-					<li style="background-image: url(i/b_1/chat/2.png); width: 273px; height: 204px; position: absolute; top:326px; left: 72px; padding-left: 13px;"><p>Почему ребенок<br> не берет трубку?</p></li>
-					<li style="background-image: url(i/b_1/chat/3.png); height: 174px; width: 285px; position: absolute; top:171px; left: 308px; z-index: 2; padding-left: 10px;"><p>Не прогуливает ли мой<br> ребенок школу сейчас?</p></li>
-					<li style="background-image: url(i/b_1/chat/4.png); height: 204px; width: 273px; position: absolute; top: 225px; left: 662px;"><p>В безопасности ли<br> мой ребенок сейчас?</p></li>
-					<li style="background-image: url(i/b_1/chat/5.png); height: 168px; width: 273px; position: absolute; top: 461px; left: 745px;"><p style="letter-spacing: -1px; padding-right: 10px;">Почему мой ребенок<br> задерживается? Должен<br> был давно прийти домой</p></li>
-				</ul>
 			</div>
+		</div>
+		<div class="b-block b-absolute">
+			<div>
+				<img class="red" src="i/red.png">
+			</div>
+			<img style="position: absolute; top:373px; left: 50%; margin-left: -223px;" src="i/girl.png">
+			<ul class="back_cloud"> 
+				<li style="background-image: url(i/b_1/cloud/5.png); width: 172px; height: 134px; position:absolute; top: 436px; left: -104px;"></li>
+				<li style="background-image: url(i/b_1/cloud/6.png); width: 194px; height: 124px; position:absolute; top: 171px; left: 80px;"></li>
+				<li style="background-image: url(i/b_1/cloud/7.png); width: 172px; height: 134px; position:absolute; top: 352px; left:976px;"></li>
+			</ul>
+			<ul class="point">
+				<li style="background-image: url(i/b_1/pip/1.png); width: 60px; height: 63px; position: absolute; top:348px; left: 4px;"></li>
+				<li style="background-image: url(i/b_1/pip/2.png); width: 57px; height: 66px; position: absolute; top:208px; left: 200px;"></li>
+				<li style="background-image: url(i/b_1/pip/3.png); width: 57px; height: 70px; position: absolute; top:187px; left: 675px;"></li>
+				<li style="background-image: url(i/b_1/pip/4.png); width: 57px; height: 66px; position: absolute; top:234px; left: 938px;"></li>
+				<li style="background-image: url(i/b_1/pip/5.png); width: 67px; height: 58px; position: absolute; top:548px; left: 1009px;"></li>
+			</ul>
+			<ul class="cloud">
+				<li style="width: 274px; height:133px; position: absolute; top:565px; left: 48px; background-image: url(i/b_1/chat/1.png);"><p style="padding-right: 18px;">Где сейчас<br> мой ребенок?</p></li>
+				<li style="background-image: url(i/b_1/chat/2.png); width: 273px; height: 204px; position: absolute; top:326px; left: 72px; padding-left: 13px;"><p>Почему ребенок<br> не берет трубку?</p></li>
+				<li style="background-image: url(i/b_1/chat/3.png); height: 174px; width: 285px; position: absolute; top:171px; left: 308px; z-index: 2; padding-left: 10px;"><p>Не прогуливает ли мой<br> ребенок школу сейчас?</p></li>
+				<li style="background-image: url(i/b_1/chat/4.png); height: 204px; width: 273px; position: absolute; top: 225px; left: 662px;"><p>В безопасности ли<br> мой ребенок сейчас?</p></li>
+				<li style="background-image: url(i/b_1/chat/5.png); height: 168px; width: 273px; position: absolute; top: 461px; left: 745px;"><p style="letter-spacing: -1px; padding-right: 10px;">Почему мой ребенок<br> задерживается? Должен<br> был давно прийти домой</p></li>
+			</ul>
 		</div>
 	</div>
 	<div class="b b-2">
@@ -106,7 +108,7 @@
 	<div class="b b-3">
 		<div class="b-block">
 			<img class="route-1" src="i/route-1.png">
-			<div style="height: 447px;">
+			<div class="content">
 				<div class="left">
 					<h3>Часы с GPS-датчиком<br> для безопасности Вашего ребенка</h3>
 					<img src="i/white-line.png">
@@ -142,28 +144,44 @@
 				<img style="position: absolute; left: 50%; margin-left: -184px; top: 50%; margin-top: -182px;" src="i/scales.png">
 				<ul>
 					<li class="clearfix" style="width: 942px;">
-						<img style="float: left;" src="i/b_3/1.png">
-						<p style="float: left; margin-top: 16px;">Вы всегда знаете<br> где Ваш ребенок</p>
-						<p style="float: right;">Не отследить прогулы<br> в школе</p>
-						<img style="float: right;" src="i/b_3/8.png">
+						<div class="left">
+							<img src="i/b_3/1.png">
+							<p style="margin-top: 16px;">Вы всегда знаете<br> где Ваш ребенок</p>
+						</div>
+						<div class="right">
+							<p>Не отследить прогулы<br> в школе</p>
+							<img src="i/b_3/8.png">
+						</div>
 					</li>
 					<li class="clearfix" style="width: 1050px;">
-						<img style="float: left;" src="i/b_3/2.png">
-						<p style="float: left; margin-top: 8px;">Уверенность что<br> сможете быть рядом, если<br> понадобится</p>
-						<p style="float: right;">Волнительно отпускать в<br> незнакомые места</p>
-						<img style="float: right;" src="i/b_3/7.png">
+						<div class="left">
+							<img src="i/b_3/2.png">
+							<p style="margin-top: 8px;">Уверенность что<br> сможете быть рядом, если<br> понадобится</p>
+						</div>
+						<div class="right">
+							<p>Волнительно отпускать в<br> незнакомые места</p>
+							<img src="i/b_3/7.png">
+						</div>
 					</li>
 					<li class="clearfix" style="width: 940px;">
-						<img style="float: left;" src="i/b_3/3.png">
-						<p style="float: left; margin-top: -6px;">Не страшно если<br> потеряется, Вы всегда<br> сможете его найти и<br> забрать домой</p>
-						<p style="float: right;">Тревога если<br> задерживается или не<br> отвечает по телефону</p>
-						<img style="float: right;" src="i/b_3/6.png">
+						<div class="left">
+							<img src="i/b_3/3.png">
+							<p style="margin-top: -6px;">Не страшно если<br> потеряется, Вы всегда<br> сможете его найти и<br> забрать домой</p>
+						</div>
+						<div class="right">
+							<p>Тревога если<br> задерживается или не<br> отвечает по телефону</p>
+							<img style="margin-top: -7px" src="i/b_3/6.png">
+						</div>
 					</li>
 					<li class="clearfix" style="width: 808px;">
-						<img style="float: left;" src="i/b_3/4.png">
-						<p style="float: left;">Может гулять где<br> хочет, он всегда под<br> присмотром</p>
-						<p style="float: right;">У ребенка отсутствует чувство<br>что за ним присматривают, а<br> следовательно возникает<br> больше соблазнов</p>
-						<img style="float: right;" src="i/b_3/5.png">
+						<div class="left">
+							<img src="i/b_3/4.png">
+							<p>Может гулять где<br> хочет, он всегда под<br> присмотром</p>
+						</div>
+						<div class="right">
+							<p>У ребенка отсутствует чувство<br>что за ним присматривают, а<br> следовательно возникает<br> больше соблазнов</p>
+							<img src="i/b_3/5.png">
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -228,7 +246,7 @@
 					<img style="margin-bottom: 50px; margin-top: 26px;" src="i/b_6/1.png">
 					<div class="sircle"><p>1</p></div>
 					<h6  style="margin-bottom: 8px;">Оставьте заявку</h6>
-					<a href="#" class="fancy" data-block="#b-popup-3">заявка</a>
+					<a href="#" class="fancy b-orange-butt" data-block="#b-popup-3">заявка</a>
 					<p style="margin-top: 10px;">или позвоните по<br>номеру:</p>
 					<b>8-800-555-55-55</b>
 				</li>
@@ -253,9 +271,9 @@
 			</ul>
 		</div>
 	</div>
-	<div class="b b-8">
+	<div class="b b-8 cleafrix">
 		<div class="blue-1"><h2>отзывы</h2></div>
-		<div class="b-block">
+		<div class="b-block clearfix">
 			<img class="route-3" src="i/route-3.png">
 			<div class="left-1 clearfix">
 				<img class="girl-1" src="i/comment-1.png">
