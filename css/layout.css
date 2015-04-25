@@ -192,6 +192,7 @@ input:-moz-placeholder {
 .b-orange-butt{
 	color: #FFFEFE;
 	text-transform: uppercase;
+<<<<<<< HEAD
 	background: rgb(255,82,107);
 	background: -moz-linear-gradient(top,  rgba(255,82,107,1) 0%, rgba(197,22,46,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,82,107,1)), color-stop(100%,rgba(197,22,46,1))); /* Chrome,Safari4+ */
@@ -202,6 +203,14 @@ input:-moz-placeholder {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff526b', endColorstr='#c5162e',GradientType=0 ); /* IE6-9 */
 	border-radius: 8px;
 	box-shadow: 2.6px 1.5px 5px rgba(1, 1, 1, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+=======
+	background-color: #e7354f;
+	background-image: -moz-linear-gradient(bottom, #e7354f 0%, #e7354f 100%);
+	background-image: -o-linear-gradient(bottom, #e7354f 0%, #e7354f 100%);
+	background-image: -webkit-linear-gradient(bottom, #e7354f 0%, #e7354f 100%);
+	background-image: linear-gradient(to top, #e7354f 0%, #e7354f 100%);
+	border-radius: 8px;
+>>>>>>> e230237d82f116c8ef79438c7c7e9ac071963ae7
 }
 	.b-orange-butt:hover{
 	background: rgb(231,53,79); /* Old browsers */
@@ -556,10 +565,13 @@ input:-moz-placeholder {
 				font-size: 21px;
 				font-weight: 400;
 			}	
+<<<<<<< HEAD
 				.b-3 .b-block .bottom .b-white-butt:hover{
 					border: 1.49px solid #C12E44;
 					box-shadow: inset 2.6px 1.5px 3px rgba(1, 1, 1, 0.5), 2.6px 1.5px 5px rgba(1, 1, 1, 0.5);
 				}
+=======
+>>>>>>> e230237d82f116c8ef79438c7c7e9ac071963ae7
 			.b-3 .b-block .bottom .b-orange-butt{
 				display: inline-block;
 				padding: 1px 54px;
@@ -569,7 +581,13 @@ input:-moz-placeholder {
 				border: 1px solid #931D2F;
 				-moz-border-radius: 8px;
 				-webkit-border-radius: 8px;
+<<<<<<< HEAD
 				box-shadow: 2.6px 1.5px 5px rgba(1, 1, 1, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+=======
+				-moz-box-shadow: 2.6px 1.5px 5px rgba(1, 1, 1, 0.5), inset 0 0 2px #E75E6B;
+				-webkit-box-shadow: 2.6px 1.5px 5px rgba(1, 1, 1, 0.5), inset 0 0 2px #E75E6B;
+				box-shadow: 2.6px 1.5px 5px rgba(1, 1, 1, 0.5), inset 0 0 2px #E75E6B;
+>>>>>>> e230237d82f116c8ef79438c7c7e9ac071963ae7
 			}	
 .b-4{
 	height: 650px;
