@@ -137,7 +137,7 @@ input.error,textarea.error{
 	box-shadow: 0 1px 2px rgba(180, 14, 14, 0.57);
 }
 .ps-lines{
-
+	display: none;
 }
 	.ps-lines li.v{
 		position: fixed;
@@ -183,12 +183,12 @@ input.error,textarea.error{
 	left: 50%;
 	margin-left: -500px;
 }
-input::-webkit-input-placeholder {
+/*input::-webkit-input-placeholder {
 	color: #434343;
 }
 input:-moz-placeholder {
 	color: #434343;
-}
+}*/
 .b-orange-butt{
 
 }
@@ -211,6 +211,14 @@ input:-moz-placeholder {
 	background-size: cover;
 	overflow: hidden;
 }
+	.b-1 .b-back-white{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 45px;
+		background-color: #FFF;
+	}
 	.b-1 .b-block{
 		position: relative;
 	}
@@ -274,7 +282,7 @@ input:-moz-placeholder {
 				}
 				.b-1 .b-block .header .right input[type="text"]{
 					border:none;
-					color: #a3a2a2;
+					/*color: #a3a2a2;*/
 					padding-left: 15px;
 					width: 155px;
 					font-family: "DSE";
@@ -369,14 +377,12 @@ input:-moz-placeholder {
 				}
 .b-2{
 	height: 169px;
-	background-image: url("../i/blue-1.png");
-	background-position: center;
-	position: absolute;
-	left: 50%;
-	margin-left: -974px;
-	z-index: 999;
-	width: 1920px;
-	margin-top:-60px;
+ 	background-image: url("../i/blue-1.png");
+ 	background-position: 50% 50%;
+ 	position: absolute;
+ 	z-index: 999;
+ 	width: 100%;
+ 	margin-top: -60px;
 }
 	.b-2 .b-block{
 		margin-top: 23px;
@@ -392,7 +398,7 @@ input:-moz-placeholder {
 		.b-2 .b-block input[type="text"]{
 			border: none;
 			text-align: center;
-			color: #3E3E3E;
+			/*color: #3E3E3E;*/
 			font-family: "DSE";
 			font-size: 16px;
 			font-weight: 200;
@@ -427,6 +433,7 @@ input:-moz-placeholder {
 			}
 .b-3{
 	margin-top: 110px;
+	overflow: hidden;
 }
 	.b-3 .b-block{
 		position: relative;
@@ -515,7 +522,7 @@ input:-moz-placeholder {
 				margin-left: 43px;
 				margin-bottom: 36px;
 			}	
-			.b-3 .b-block .bottom a{
+			.b-3 .b-block .bottom .b-white-butt{
 				display: block;
 				float: left;
 				margin-left: 13px;
@@ -523,9 +530,9 @@ input:-moz-placeholder {
 				-moz-border-radius: 8px;
 				-webkit-border-radius: 8px;
 				border-radius: 8px;
-				-moz-box-shadow: 2.6px 1.5px 5px rgba(1, 1, 1, 0.5);
-				-webkit-box-shadow: 2.6px 1.5px 5px rgba(1, 1, 1, 0.5);
-				box-shadow: 2.6px 1.5px 5px rgba(1, 1, 1, 0.5);
+				-moz-box-shadow: inset 2.6px 1.5px 5px rgba(1, 1, 1, 0.5), 2.6px 1.5px 5px rgba(1, 1, 1, 0.5);
+				-webkit-box-shadow: inset 2.6px 1.5px 5px rgba(1, 1, 1, 0.5), 2.6px 1.5px 5px rgba(1, 1, 1, 0.5);
+				box-shadow: inset 2.6px 1.5px 5px rgba(1, 1, 1, 0.5), 2.6px 1.5px 5px rgba(1, 1, 1, 0.5);
 				color: #3E3E3E;
 				font-family: "DSR";
 				text-transform: uppercase;
@@ -534,7 +541,8 @@ input:-moz-placeholder {
 				font-size: 21px;
 				font-weight: 400;
 			}	
-			.b-3 .b-block .bottom input{
+			.b-3 .b-block .bottom .b-orange-butt{
+				display: inline-block;
 				color: #FFFEFE;
 				padding: 1px 54px;
 				font-family: "DSR";
@@ -555,12 +563,20 @@ input:-moz-placeholder {
 				box-shadow: 2.6px 1.5px 5px rgba(1, 1, 1, 0.5), inset 0 0 2px #E75E6B;
 			}	
 .b-4{
-	background-image: url("../i/back-3.png");
-	height: 660px;
-	background-size: cover;
-	background-position: center;
-	background-repeat-y: no-repeat; 
+	height: 650px;
 }	
+	.b-4 .b-back{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		z-index: 10;
+		background-image: url("../i/back-3.png");
+		height: 650px;
+		background-size: cover;
+		background-position: center;
+		background-repeat-y: no-repeat; 
+	}
 	.b-4 .b-block{
 		position: relative;
 		height: 660px;
@@ -612,15 +628,15 @@ input:-moz-placeholder {
 .b-5{
 	background-image: url("../i/back-4.png");
 	background-position: center;
-	height: 620px;
-	margin-top: -45px;
+	height: 700px;
+	margin-top: -93px;
 }
 	.b-5 .b-block{
 
 	}
 		.b-5 .b-block ul{
 			text-align: center;
-			padding-top: 100px;
+			padding-top: 150px;
 			margin-left: 50px;
 		}
 			.b-5 .b-block ul li{
@@ -640,10 +656,12 @@ input:-moz-placeholder {
 					font-size: 15px;
 				}
 .b-6{
-	background-color: #edf2f5;
-	height: 520px;
+	height: 578px;
 	text-align: center;
 	position: relative;
+	overflow: hidden;
+	margin-top: -70px;
+	overflow: hidden;
 }
 	.b-6 .b-block{
 		width: 1358px;
@@ -651,7 +669,9 @@ input:-moz-placeholder {
 		  text-align: center;
 		  /* display: inline-block; */
 		  position: absolute;
-		  left: 50%;
+		  
+		top: 58px;
+		left: 50%;
 		  margin-left: -674px;
 	}
 	.b-6 .blue{
@@ -661,7 +681,7 @@ input:-moz-placeholder {
 				background-repeat-y: no-repeat;
 				position: absolute;
 				z-index: 10;
-				top: -69px;
+				top: 0px;
 				width: 100%;
 			}
 				.b-6 div h2{
@@ -715,7 +735,7 @@ input:-moz-placeholder {
 		}
 
 .b-7{
-
+	overflow: hidden;
 }
 	.b-7 .b-block{
 		position: relative;
@@ -758,6 +778,7 @@ input:-moz-placeholder {
 					font-family: "DAYS";
 					font-size: 18px;
 					font-weight: 400;
+					line-height: 25px;
 				}
 				.b-7 .b-block ul li h6{
 					color: #4E4E4E;
@@ -911,13 +932,20 @@ input:-moz-placeholder {
 					font-weight: 400;
 				}
 .b-9{
-	background-image: url("../i/back-8.png");
+	
 	height: 609px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
 	margin-top: -90px;
 }
+	.b-9 .b-back{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		background-image: url("../i/back-8.png");
+		height: 609px;
+		background-position: 50% 50%;
+		z-index: 10;
+	}
 	.b-9 .b-block{
 
 	}
@@ -940,15 +968,18 @@ input:-moz-placeholder {
 				font-size: 32px;
 				font-weight: 700;
 			}
-		.b-9 .b-block .right{
+		.b-form{
+			padding-bottom: 7px;
 			width: 259px;
 			overflow: hidden;
 			height: 285px;
 			background-color: #FFF;
 			border-radius: 30px;
+		}
+		.b-9 .b-form{
 			margin-top: 160px;
 		}
-			.b-9 .b-block .right h2{
+			.b-form h2{
 				color: #FFF;
 				padding: 25px 0px;
 				background-color: #09C;
@@ -958,10 +989,10 @@ input:-moz-placeholder {
 				text-transform: uppercase;
 				margin-bottom: 18px;
 			}
-			.b-9 .b-block .right input[type="text"]{
+			.b-form input[type="text"]{
 				margin-top: 6px;
 				opacity: 0.75;
-				color: #5C5C5C;
+				/*color: #5C5C5C;*/
 				font-family: "OSR";
 				font-size: 14px;
 				font-weight: 400;
@@ -970,22 +1001,22 @@ input:-moz-placeholder {
 				width: 183px;
 				height: 31px;
 			}
-			.b-9 .b-block .right .name{
+			.b-form .name{
 				background-image: url("../i/man.png");
 				background-repeat: no-repeat;
 				background-position: 12px 50%;
 			}
-			.b-9 .b-block .right .phone{
+			.b-form .phone{
 				background-image: url("../i/phone.png");
 				background-repeat: no-repeat;
 				background-position: 12px 50%;
 			}
-			.b-9 .b-block .right .mail{
+			.b-form .email{
 				background-image: url("../i/mail.png");
 				background-repeat: no-repeat;
 				background-position: 12px 50%;
 			}
-			.b-9 .b-block .right input[type="submit"]{
+			.b-form input[type="submit"]{
 				color: #FFF;
 				font-family: "RCR";
 				font-size: 17px;
@@ -1005,33 +1036,43 @@ input:-moz-placeholder {
 				-webkit-box-shadow: 2.6px 1.5px 5px rgba(1, 1, 1, 0.5), inset 0 0 2px #EDAFAF;
 				box-shadow: 2.6px 1.5px 5px rgba(1, 1, 1, 0.5), inset 0 0 2px #EDAFAF;
 			}
-			.b-9 .b-block .right input[type="submit"]:hover{
+			.b-form input[type="submit"]:hover{
 				cursor: pointer;
 			}
 .b-10{
-	height: 411px;
+	height: 406px;
 	position: relative;
 }
+	.b-map{
+		height: 481px;
+		width: 100%;
+		position: absolute;
+  		top: -75px;
+	}
 	.b-10 h2{
+		position: absolute;
+		left: 0px;
+		top: 0px;
 		color: #393939;
 		font-family: "DAYS";
 		font-size: 30px;
 		font-weight: 400;
 		text-transform: uppercase;
 		margin-top: 35px;
+		width: 100%;
 	}
-	.b-10 div{
+	.b-10 .b-map-desc{
 		opacity: 0.82;
 		width: 458px;
 		height: 284px;
 		background-color: #09C;
 		position: absolute;
-		top: 127px;
+		bottom: 0px;
 		border-radius: 30px 30px 0px 0px;
 		left: 50%;
 		margin-left: -473px;
 	}
-		.b-10 div p{
+		.b-10 .b-map-desc p{
 			color: #FFF;
 			font-family: "OSR";
 			text-align: left;
@@ -1048,8 +1089,8 @@ input:-moz-placeholder {
 		text-align: center;
 	}
 		.b-11 .b-block .left-1{
-			margin-top: 15px;
-			margin-bottom: 15px;
+			margin-top: 20px;
+  			margin-bottom: 13px;
 			margin-left: 52px;
 		}
 			.b-11 .b-block .left-1 img{
@@ -1095,3 +1136,18 @@ input:-moz-placeholder {
 					font-size: 19px;
 					font-family: "DSB";
 				}
+.fancybox-wrap{
+	margin-bottom: 30px;
+}
+	.fancybox-skin{
+		background-color: transparent;
+		-webkit-border-radius: 0px;
+	  -moz-border-radius: 0px;
+	  border-radius: 0px;
+	    -webkit-box-shadow: none !important;
+	  -moz-box-shadow: none !important;
+	  box-shadow: none !important;
+	}
+	.fancybox-close{
+		display: none;
+	}
