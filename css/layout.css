@@ -420,7 +420,7 @@ input:-moz-placeholder {
 			font-weight: 200;
 			padding: 6px 12px;
 			border-radius: 8px;
-			margin-right: 33px;
+			margin-right: 17px;
 		}
 		.b-2 .b-block input[type="submit"]{
 			margin-left: 3px;
@@ -979,12 +979,12 @@ input:-moz-placeholder {
 			padding-bottom: 7px;
 			width: 259px;
 			overflow: hidden;
-			height: 285px;
+			height: 257px;
 			background-color: #FFF;
 			border-radius: 30px;
 		}
 		.b-9 .b-form{
-			margin-top: 160px;
+			margin-top: 180px;
 		}
 			.b-form h2{
 				color: #FFF;
