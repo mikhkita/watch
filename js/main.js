@@ -20,4 +20,9 @@ $(document).ready(function(){
         title: "Часы"
     });
 
+    $(".blur-clouds li div").parallax({
+        mouseport: $(".b-1"),
+        xparallax: "50%"
+    });
+
 });

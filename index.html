@@ -27,6 +27,7 @@
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
 	<script type="text/javascript" src="js/KitSend.js"></script>
@@ -72,25 +73,126 @@
 			<div>
 				<img class="red" src="i/red.png">
 			</div>
-			<img style="position: absolute; top:373px; left: 50%; margin-left: -223px;" src="i/girl.png">
-			<ul class="back_cloud"> 
-				<li style="background-image: url(i/b_1/cloud/5.png); width: 172px; height: 134px; position:absolute; top: 436px; left: -104px;"></li>
-				<li style="background-image: url(i/b_1/cloud/6.png); width: 194px; height: 124px; position:absolute; top: 171px; left: 80px;"></li>
-				<li style="background-image: url(i/b_1/cloud/7.png); width: 172px; height: 134px; position:absolute; top: 352px; left:976px;"></li>
+			<img class="b-think" src="i/girl.png">
+			<ul class="blur-clouds"> 
+				<li class="b-cloud-1"><div></div></li>
+				<li class="b-cloud-2"><div></div></li>
+				<li class="b-cloud-3"><div></div></li>
 			</ul>
-			<ul class="point">
-				<li style="background-image: url(i/b_1/pip/1.png); width: 60px; height: 63px; position: absolute; top:348px; left: 4px;"></li>
-				<li style="background-image: url(i/b_1/pip/2.png); width: 57px; height: 66px; position: absolute; top:208px; left: 200px;"></li>
-				<li style="background-image: url(i/b_1/pip/3.png); width: 57px; height: 70px; position: absolute; top:187px; left: 675px;"></li>
-				<li style="background-image: url(i/b_1/pip/4.png); width: 57px; height: 66px; position: absolute; top:234px; left: 938px;"></li>
-				<li style="background-image: url(i/b_1/pip/5.png); width: 67px; height: 58px; position: absolute; top:548px; left: 1009px;"></li>
+			<ul class="b-pip-list">
+				<li class="b-pip-1">
+					<svg width="93px" height="165px" viewBox="0 0 93 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+		                <path d="M47,0.3 C21.4,0.3 0.5,21.1 0.5,46.8 C0.5,51.5 1.2,56.1 2.5,60.4 C5.3,74.8 22.4,104.5 46.2,141.4 C46.4,141.7 46.7,141.8 46.9,141.7 L46.9,93.3 L46.9,76.8 C30.3,76.8 16.9,63.4 16.9,46.8 C16.9,30.2 30.3,16.8 46.9,16.8 C63.5,16.8 76.9,30.2 76.9,46.8 C76.9,63.4 63.5,76.8 46.9,76.8 L46.9,93.3 L46.9,141.7 C47.2,141.8 47.5,141.7 47.6,141.4 C71.4,104.5 88.5,74.8 91.3,60.4 C92.6,56.1 93.3,51.5 93.3,46.8 C93.5,21.1 72.7,0.3 47,0.3 L47,0.3 Z" fill="#fd3853" id="Shape1"></path>
+					    <animateTransform 
+				           xlink:href="#Shape1"
+				           attributeName="transform"
+				           type="translate"
+				           dur="0.6s"
+				           calcMode="spline"
+				           values="0 0;0 20;0 0"
+				           keyTimes="0; 0.5; 1"
+				           keySplines="0.42 0 1 1; 0 0 0.59 1"
+				           fill="freeze"  
+				           id="circ-anim"
+				           repeatCount="indefinite"/>
+					</svg>
+				</li>
+				<li class="b-pip-2">
+					<svg width="130px" height="165px" viewBox="0 0 130 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+						<defs>
+					        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+					            <feGaussianBlur stdDeviation="7.16337316" in="SourceGraphic" result="blur"></feGaussianBlur>
+					        </filter>
+					    </defs>
+						<g transform="translate(15)">
+			                <path filter="url(#filter-1)" d="M47,0.3 C21.4,0.3 0.5,21.1 0.5,46.8 C0.5,51.5 1.2,56.1 2.5,60.4 C5.3,74.8 22.4,104.5 46.2,141.4 C46.4,141.7 46.7,141.8 46.9,141.7 L46.9,93.3 L46.9,76.8 C30.3,76.8 16.9,63.4 16.9,46.8 C16.9,30.2 30.3,16.8 46.9,16.8 C63.5,16.8 76.9,30.2 76.9,46.8 C76.9,63.4 63.5,76.8 46.9,76.8 L46.9,93.3 L46.9,141.7 C47.2,141.8 47.5,141.7 47.6,141.4 C71.4,104.5 88.5,74.8 91.3,60.4 C92.6,56.1 93.3,51.5 93.3,46.8 C93.5,21.1 72.7,0.3 47,0.3 L47,0.3 Z" fill="#fd3853" id="Shape2"></path>
+		                <g>
+					    <animateTransform 
+				           xlink:href="#Shape2"
+				           attributeName="transform"
+				           type="translate"
+				           dur="0.6s"
+				           calcMode="spline"
+				           values="0 0;0 20;0 0"
+				           keyTimes="0; 0.5; 1"
+				           keySplines="0.42 0 1 1; 0 0 0.59 1"
+				           fill="freeze"  
+				           id="circ-anim"
+				           repeatCount="indefinite"/>
+					</svg>
+				</li>
+				<li class="b-pip-3">
+					<svg width="130px" height="165px" viewBox="0 0 130 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+						<defs>
+					        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+					            <feGaussianBlur stdDeviation="7.16337316" in="SourceGraphic" result="blur"></feGaussianBlur>
+					        </filter>
+					    </defs>
+						<g transform="translate(15)">
+			                <path filter="url(#filter-2)" d="M47,0.3 C21.4,0.3 0.5,21.1 0.5,46.8 C0.5,51.5 1.2,56.1 2.5,60.4 C5.3,74.8 22.4,104.5 46.2,141.4 C46.4,141.7 46.7,141.8 46.9,141.7 L46.9,93.3 L46.9,76.8 C30.3,76.8 16.9,63.4 16.9,46.8 C16.9,30.2 30.3,16.8 46.9,16.8 C63.5,16.8 76.9,30.2 76.9,46.8 C76.9,63.4 63.5,76.8 46.9,76.8 L46.9,93.3 L46.9,141.7 C47.2,141.8 47.5,141.7 47.6,141.4 C71.4,104.5 88.5,74.8 91.3,60.4 C92.6,56.1 93.3,51.5 93.3,46.8 C93.5,21.1 72.7,0.3 47,0.3 L47,0.3 Z" fill="#fd3853" id="Shape3"></path>
+		                <g>
+					    <animateTransform 
+				           xlink:href="#Shape3"
+				           attributeName="transform"
+				           type="translate"
+				           dur="0.6s"
+				           calcMode="spline"
+				           values="0 0;0 20;0 0"
+				           keyTimes="0; 0.5; 1"
+				           keySplines="0.42 0 1 1; 0 0 0.59 1"
+				           fill="freeze"  
+				           id="circ-anim"
+				           repeatCount="indefinite"/>
+					</svg>
+				</li>
+				<li class="b-pip-4">
+					<svg width="93px" height="165px" viewBox="0 0 93 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+		                <path d="M47,0.3 C21.4,0.3 0.5,21.1 0.5,46.8 C0.5,51.5 1.2,56.1 2.5,60.4 C5.3,74.8 22.4,104.5 46.2,141.4 C46.4,141.7 46.7,141.8 46.9,141.7 L46.9,93.3 L46.9,76.8 C30.3,76.8 16.9,63.4 16.9,46.8 C16.9,30.2 30.3,16.8 46.9,16.8 C63.5,16.8 76.9,30.2 76.9,46.8 C76.9,63.4 63.5,76.8 46.9,76.8 L46.9,93.3 L46.9,141.7 C47.2,141.8 47.5,141.7 47.6,141.4 C71.4,104.5 88.5,74.8 91.3,60.4 C92.6,56.1 93.3,51.5 93.3,46.8 C93.5,21.1 72.7,0.3 47,0.3 L47,0.3 Z" fill="#fd3853" id="Shape4"></path>
+					    <animateTransform 
+				           xlink:href="#Shape4"
+				           attributeName="transform"
+				           type="translate"
+				           dur="0.6s"
+				           calcMode="spline"
+				           values="0 0;0 20;0 0"
+				           keyTimes="0; 0.5; 1"
+				           keySplines="0.42 0 1 1; 0 0 0.59 1"
+				           fill="freeze"  
+				           id="circ-anim"
+				           repeatCount="indefinite"/>
+					</svg>
+				</li>
+				<li class="b-pip-5">
+					<svg width="130px" height="165px" viewBox="0 0 130 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+						<defs>
+					        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+					            <feGaussianBlur stdDeviation="7.16337316" in="SourceGraphic" result="blur"></feGaussianBlur>
+					        </filter>
+					    </defs>
+						<g transform="translate(15)">
+			                <path filter="url(#filter-3)" d="M47,0.3 C21.4,0.3 0.5,21.1 0.5,46.8 C0.5,51.5 1.2,56.1 2.5,60.4 C5.3,74.8 22.4,104.5 46.2,141.4 C46.4,141.7 46.7,141.8 46.9,141.7 L46.9,93.3 L46.9,76.8 C30.3,76.8 16.9,63.4 16.9,46.8 C16.9,30.2 30.3,16.8 46.9,16.8 C63.5,16.8 76.9,30.2 76.9,46.8 C76.9,63.4 63.5,76.8 46.9,76.8 L46.9,93.3 L46.9,141.7 C47.2,141.8 47.5,141.7 47.6,141.4 C71.4,104.5 88.5,74.8 91.3,60.4 C92.6,56.1 93.3,51.5 93.3,46.8 C93.5,21.1 72.7,0.3 47,0.3 L47,0.3 Z" fill="#fd3853" id="Shape5"></path>
+		                <g>
+					    <animateTransform 
+				           xlink:href="#Shape5"
+				           attributeName="transform"
+				           type="translate"
+				           dur="0.6s"
+				           calcMode="spline"
+				           values="0 0;0 20;0 0"
+				           keyTimes="0; 0.5; 1"
+				           keySplines="0.42 0 1 1; 0 0 0.59 1"
+				           fill="freeze"  
+				           id="circ-anim"
+				           repeatCount="indefinite"/>
+					</svg>
+				</li>
 			</ul>
-			<ul class="cloud">
-				<li style="width: 274px; height:133px; position: absolute; top:565px; left: 48px; background-image: url(i/b_1/chat/1.png);"><p style="padding-right: 18px;">Где сейчас<br> мой ребенок?</p></li>
-				<li style="background-image: url(i/b_1/chat/2.png); width: 273px; height: 204px; position: absolute; top:326px; left: 72px; padding-left: 13px;"><p>Почему ребенок<br> не берет трубку?</p></li>
-				<li style="background-image: url(i/b_1/chat/3.png); height: 174px; width: 285px; position: absolute; top:171px; left: 308px; z-index: 2; padding-left: 10px;"><p>Не прогуливает ли мой<br> ребенок школу сейчас?</p></li>
-				<li style="background-image: url(i/b_1/chat/4.png); height: 204px; width: 273px; position: absolute; top: 225px; left: 662px;"><p>В безопасности ли<br> мой ребенок сейчас?</p></li>
-				<li style="background-image: url(i/b_1/chat/5.png); height: 168px; width: 273px; position: absolute; top: 461px; left: 745px;"><p style="letter-spacing: -1px; padding-right: 10px;">Почему мой ребенок<br> задерживается? Должен<br> был давно прийти домой</p></li>
+			<ul class="cloud" data-offset="700">
+				<li style="width: 274px; height:133px; background-image: url(i/b_1/chat/1.png);" class="anim cloud-1" data-anim="cloud-1" data-cont=".cloud" data-delay="0"><p style="padding-right: 18px;">Где сейчас<br> мой ребенок?</p></li>
+				<li style="background-image: url(i/b_1/chat/2.png); width: 273px; height: 204px; padding-left: 13px;" class="anim cloud-2" data-anim="cloud-2" data-cont=".cloud" data-delay="600"><p>Почему ребенок<br> не берет трубку?</p></li>
+				<li style="background-image: url(i/b_1/chat/3.png); height: 174px; width: 285px; z-index: 2; padding-left: 10px;" class="anim cloud-3" data-anim="cloud-3" data-cont=".cloud" data-delay="1200"><p>Не прогуливает ли мой<br> ребенок школу сейчас?</p></li>
+				<li style="background-image: url(i/b_1/chat/4.png); height: 204px; width: 273px;" class="anim cloud-4" data-anim="cloud-4" data-cont=".cloud" data-delay="1800"><p>В безопасности ли<br> мой ребенок сейчас?</p></li>
+				<li style="background-image: url(i/b_1/chat/5.png); height: 168px; width: 273px;" class="anim cloud-5" data-anim="cloud-5" data-cont=".cloud" data-delay="2400"><p style="letter-spacing: -1px; padding-right: 10px;">Почему мой ребенок<br> задерживается? Должен<br> был давно прийти домой</p></li>
 			</ul>
 		</div>
 	</div>

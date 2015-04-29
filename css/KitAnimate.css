@@ -87,30 +87,33 @@
 
 
 /*Кастомные анимации*/
-.procAnim-1 .b-proc-high,
-.procAnim-2 .b-proc-high,
-.procAnim-3 .b-proc-high{
-	-webkit-transition: all 1000ms linear;
-	   -moz-transition: all 1000ms linear;
-	    -ms-transition: all 1000ms linear;
-	   	 -o-transition: all 1000ms linear;
-			transition: all 1000ms linear;
-}
-.procAnim-1 .b-proc-high{
-	height: 0px;
-}
-	.procAnim-1-show .b-proc-high{
-		height: 80px;
+.cloud li{
+	-webkit-transition: all 400ms cubic-bezier(.16,1.23,.48,1.11);
+	   -moz-transition: all 400ms cubic-bezier(.16,1.23,.48,1.11);
+	    -ms-transition: all 400ms cubic-bezier(.16,1.23,.48,1.11);
+	   	 -o-transition: all 400ms cubic-bezier(.16,1.23,.48,1.11);
+			transition: all 400ms cubic-bezier(.16,1.23,.48,1.11);
+	left: 300px;
+	top: 500px;
+	position: absolute;
+}	
+	.cloud li.cloud-1-show{
+		top: 565px; 
+		left: 48px;
 	}
-.procAnim-2 .b-proc-high{
-	height: 0px;
-}
-	.procAnim-2-show .b-proc-high{
-		height: 120px;
+	.cloud li.cloud-2-show{
+		top:326px;
+		left: 72px;
 	}
-.procAnim-3 .b-proc-high{
-	height: 0px;
-}
-	.procAnim-3-show .b-proc-high{
-		height: 210px;
+	.cloud li.cloud-3-show{
+		top:171px;
+		left: 308px;
+	}
+	.cloud li.cloud-4-show{
+		top: 225px;
+		left: 662px;
+	}
+	.cloud li.cloud-5-show{
+		top: 461px;
+		left: 745px;
 	}
