@@ -566,8 +566,8 @@ input:-moz-placeholder {
 				cursor: pointer;
 			}
 .b-3{
-	margin-top: 110px;
-	overflow: hidden;
+	padding-top: 110px;
+	overflow-x: hidden;
 }
 	.b-3 .b-block{
 		position: relative;
@@ -575,8 +575,8 @@ input:-moz-placeholder {
 	}
 		.b-3 .b-block .route-1{
 			position: absolute;
-			right: -120px;
-			top: -7px;
+  			right: -105px;
+  			top: -28px;
 		}
 		.b-3 .b-block .content{
 			height: 447px;
@@ -692,7 +692,10 @@ input:-moz-placeholder {
 				border: 1px solid #931D2F;
 				-moz-border-radius: 8px;
 				-webkit-border-radius: 8px;
-			}	
+			}
+		.b-3 .blue-pin{
+			width: 42px;
+		}	
 .b-4{
 	height: 650px;
 }	

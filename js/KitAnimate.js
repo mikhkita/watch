@@ -47,17 +47,8 @@ $(document).ready(function(){
 	}
 
 	// Кастомные функции
-	custom['upPercent'] = function(el){
-		var num = el.attr("data-num")*1,
-			out = el.find(".b-proc-text span"),
-			dur = 1000,
-			timer,
-			now = out.html()*1;
-		timer = setInterval(function(){
-			now++
-			out.html(now);
-			if( now >= num ) clearInterval(timer);
-		},dur/(num-now));
+	custom['svg-anim'] = function(el){
+		document.getElementById(el.attr("data-id")).beginElement();
 	}
 
 });
