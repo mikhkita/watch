@@ -618,20 +618,46 @@ input:-moz-placeholder {
 			.b-3 .b-block .content .right{
 				margin-top: 22px;
 			}
-				.b-3 .b-block .content .right div{
+				.b-3 .b-block .content .right .b-clock-cont{
+					position: relative;
+					text-align: left;
+					background-repeat: no-repeat;
 					width: 462px;
 					height: 425px;
 					background-image: url("../i/mini.png");
+					padding-top: 30px;
 				}
+					.b-3 .b-block .content .right .b-clock-cont div{
+						width: 334px;
+						height: 334px;
+						background-color: #f1f1f1;
+						border-radius: 50%;
+						margin-left: 83px;
+					}
 					.b-3 .b-block .content .right img{
-						margin-left: 37px;
-						margin-top: 30px;
+						position: absolute;
+						left: 95px;
+				  		top: 69px;
+				  		display: none;
 					}	
-		.b-3 .b-block .bottom{
+					.b-2-clock{
+						width: 292px;
+				  		height: 334px;
+				  		position: absolute;
+				  		left: 95px;
+				  		top: 30px;
+					}
+		.b-3 .b-bottom-cont{
 			position: relative;
-			width: 477px;
-			display: inline-block;
-			margin-top: -40px;
+			width: 100%;
+			text-align: center;
+		}
+		.b-3 .b-block .bottom{
+			width: 453px;
+			position: absolute;
+			left: 50%;
+			margin-left: -226px;
+			top: -46px;
 		}
 			.b-3 .b-block .bottom p{
 				font-family: "DSB";

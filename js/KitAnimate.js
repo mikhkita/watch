@@ -1,5 +1,5 @@
+var custom = [];
 $(document).ready(function(){	
-	var custom = [];
 
 	if( device.mobile() || device.tablet() ){
 		$(".anim").each(function(){
@@ -49,6 +49,13 @@ $(document).ready(function(){
 	// Кастомные функции
 	custom['svg-anim'] = function(el){
 		document.getElementById(el.attr("data-id")).beginElement();
+	}
+	custom['clock-anim'] = function(el){
+		document.getElementById(el.attr("data-id")).beginElement();
+	}
+	custom['clock-change'] = function (){
+		$(".clock-anim").find("img").fadeIn(500);
+		$(".clock-anim").find("svg").fadeOut(500);
 	}
 
 });

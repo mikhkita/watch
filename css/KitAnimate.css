@@ -93,7 +93,7 @@
 	    -ms-transition: all 400ms cubic-bezier(.16,1.23,.48,1.11);
 	   	 -o-transition: all 400ms cubic-bezier(.16,1.23,.48,1.11);
 			transition: all 400ms cubic-bezier(.16,1.23,.48,1.11);
-	left: 300px;
+	left: 340px;
 	top: 500px;
 	position: absolute;
 }	
