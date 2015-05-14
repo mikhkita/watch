@@ -1,15 +1,15 @@
 var custom = [];
 $(document).ready(function(){	
 
-	if( device.mobile() || device.tablet() ){
-		$(".anim").each(function(){
-			var $this = $(this);
-				if( $this.attr("data-func") ){
-					custom[$this.attr("data-func")]($this);
-				}
-				$this.removeClass($this.attr("data-anim")).addClass($this.attr("data-anim")+"-show");
-		});
-	}else{
+	// if( device.mobile() || device.tablet() ){
+	// 	$(".anim").each(function(){
+	// 		var $this = $(this);
+	// 			if( $this.attr("data-func") ){
+	// 				custom[$this.attr("data-func")]($this);
+	// 			}
+	// 			$this.removeClass($this.attr("data-anim")).addClass($this.attr("data-anim")+"-show");
+	// 	});
+	// }else{
 		var myWidth, myHeight;
 
 		function whenScroll(){
@@ -23,7 +23,12 @@ $(document).ready(function(){
 						if( $this.attr("data-func") ){
 							custom[$this.attr("data-func")]($this);
 						}
-						$this.addClass($this.attr("data-anim")+"-show");
+						if( $this.attr("data-svg") ){
+							document.getElementById($this.attr("data-svg")).beginElement();
+						} 
+						if( $this.attr("data-anim") ){
+							$this.addClass($this.attr("data-anim")+"-show");
+						}
 					},$(this).attr("data-delay")*1);
 					$(this).removeClass("anim");
 				}
@@ -44,18 +49,6 @@ $(document).ready(function(){
 	  	resize();
 	  	$(window).scroll(whenScroll);
 		whenScroll();
-	}
-
-	// Кастомные функции
-	custom['svg-anim'] = function(el){
-		document.getElementById(el.attr("data-id")).beginElement();
-	}
-	custom['clock-anim'] = function(el){
-		document.getElementById(el.attr("data-id")).beginElement();
-	}
-	custom['clock-change'] = function (){
-		$(".clock-anim").find("img").fadeIn(500);
-		$(".clock-anim").find("svg").fadeOut(500);
-	}
+	// }
 
 });

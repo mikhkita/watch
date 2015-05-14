@@ -371,7 +371,7 @@ input:-moz-placeholder {
 		.b-1 .b-block .red{
 			position: absolute;
 			left: 50%;
-			margin-left: -953px;
+			margin-left: -959px;
 			top: 103px;
 			z-index: 3;
 		}
@@ -727,6 +727,7 @@ input:-moz-placeholder {
 }	
 	.b-4 .b-back{
 		position: absolute;
+		overflow: hidden;
 		left: 0px;
 		top: 0px;
 		width: 100%;
@@ -766,6 +767,18 @@ input:-moz-placeholder {
 				font-family: "DSB";
 				font-size: 30px;
 			}
+		.b-4 .b-scales{
+			position: absolute; 
+			width: 358px;
+			height: 358px;
+			left: 50%; 
+			margin-left: -184px; 
+			top: 50%; 
+			margin-top: -182px;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-image: url('../i/scales/back.png');
+		}
 		.b-4 .b-block ul{
 			text-align: center;
 			margin-top: 46px;
@@ -880,9 +893,9 @@ input:-moz-placeholder {
 		.b-6 .b-block .line{
 			position: absolute;
 			top: 50%;
-			margin-top: -63px;
+			margin-top: -73px;
 			left: 50%;
-			margin-left: -284.5px;
+			margin-left: -304.5px;
 		}
 		.b-6 .b-block .round{
 			position: absolute;
@@ -899,13 +912,25 @@ input:-moz-placeholder {
 			margin-left: 73px;
 		}
 		.b-6 .b-block .watch{
+			-webkit-transition: all 600ms ease-out;
+			   -moz-transition: all 600ms ease-out;
+			    -ms-transition: all 600ms ease-out;
+			   	 -o-transition: all 600ms ease-out;
+					transition: all 600ms ease-out;
+			-webkit-transform-origin: 0% 100%;
+			   -moz-transform-origin: 0% 100%;
+			    -ms-transform-origin: 0% 100%;
+			   	 -o-transform-origin: 0% 100%;
+					transform-origin: 0% 100%;
 			position: absolute;
 			top: 50%;
 			margin-top: -99px;
 			left: 50%;
 			margin-left: 457px;
 		}
-
+		#b-5-circle{
+			opacity: 0;
+		}
 .b-7{
 	overflow: hidden;
 }
@@ -922,9 +947,12 @@ input:-moz-placeholder {
 		}
 		.b-7 .b-block .route{
 			position: absolute;
-			top: 84px;
+			top: 90px;
 			left: -409px;
 			z-index: -1;
+		}
+		#b-6-path{
+			opacity: 0.6;
 		}
 		.b-7 .b-block ul{
 			margin-top: 35px;
@@ -943,6 +971,11 @@ input:-moz-placeholder {
 					border-radius: 50%;
 					margin-left: 71px;
 					margin-top: -50px;
+					-webkit-transition: all 300ms ease-out;
+					   -moz-transition: all 300ms ease-out;
+					    -ms-transition: all 300ms ease-out;
+					   	 -o-transition: all 300ms ease-out;
+							transition: all 300ms ease-out;
 				}	
 				.b-7 .b-block ul li .sircle p{
 					color: #FFF;
@@ -1008,8 +1041,8 @@ input:-moz-placeholder {
 	}
 		.b-8 .b-block .route-3{
 			position: absolute;
-			top: -23px;
-			left: -116px;
+			top: -17px;
+			left: -110px;
 		}
 		.b-8 .b-block .left-1{
 			text-align: center;
@@ -1078,6 +1111,7 @@ input:-moz-placeholder {
 					font-family: "RCR";
 					font-size: 16px;
 					font-weight: 400;
+					margin-top: 10px;
 				}	
 				.b-8 .b-block .left-2 .quote-2{
 					float: right;
@@ -1113,6 +1147,80 @@ input:-moz-placeholder {
 	.b-9 .b-block{
 
 	}
+		.b-questions{
+
+		}
+			.b-questions li{
+				position: absolute;
+			}
+				.b-questions li div{
+					position: absolute;
+				}
+			.b-questions li.b-question-1{
+				left: 375px;
+				top: 426px;
+				width: 68px;
+				height: 59px;
+			}
+				.b-questions li.b-question-1 div{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b_9/1.png');
+					width: 56px;
+					height: 44px;
+				}
+			.b-questions li.b-question-2{
+				left: 316px;
+				top: 108px;
+				width: 152px;
+				height: 183px;
+			}
+				.b-questions li.b-question-2 div{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b_9/2.png');
+					width: 102px;
+					height: 123px;
+				}
+			.b-questions li.b-question-3{
+				left: 537px;
+				top: 94px;
+				width: 49px;
+				height: 78px;
+			}
+				.b-questions li.b-question-3 div{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b_9/3.png');
+					width: 29px;
+					height: 62px;
+				}
+			.b-questions li.b-question-4{
+				left: 647px;
+				top: 142px;
+				width: 139px;
+				height: 155px;
+			}
+				.b-questions li.b-question-4 div{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b_9/4.png');
+					width: 89px;
+					height: 105px;
+				}
+			.b-questions li.b-question-5{
+				left: 706px;
+				top: 294px;
+				width: 56px;
+				height: 65px;
+			}
+				.b-questions li.b-question-5 div{
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-image: url('../i/b_9/5.png');
+					width: 46px;
+					height: 55px;
+				}
 		.b-9 .b-block .left{
 			width: 416px;
 			text-align: left;
