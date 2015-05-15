@@ -117,3 +117,22 @@
 		top: 461px;
 		left: 745px;
 	}
+.scaleIn{
+	-webkit-transition: all 500ms ease-out;
+	   -moz-transition: all 500ms ease-out;
+	    -ms-transition: all 500ms ease-out;
+	   	 -o-transition: all 500ms ease-out;
+			transition: all 500ms ease-out;
+	-webkit-transform: scale(0.5);
+	   -moz-transform: scale(0.5);
+    	-ms-transform: scale(0.5);
+    	 -o-transform: scale(0.5); 
+    		transform: scale(0.5);
+}
+	.scaleIn-show{
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+	    	-ms-transform: scale(1);
+	    	 -o-transform: scale(1); 
+	    		transform: scale(1);
+	}
