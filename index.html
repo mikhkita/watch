@@ -556,9 +556,9 @@
 		</div>
 	</div>
 	<div class="b b-5">
-		<div class="b-block anim" data-svg="b-4-battery-green-animate" >
-			<ul class="clearfix">
-				<li>
+		<div class="b-block" >
+			<ul class="b-4-animation clearfix">
+				<li class="anim" data-svg="b-4-battery-green-animate" data-cont=".b-5">
 					<div>
 						<!-- <img style="margin-top: 59px; margin-bottom: 18px;" src="i/b_4/1.png"> -->
 						<svg style="margin-top: 59px; margin-bottom: 18px;" width="86px" height="57px" viewBox="0 0 86 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -578,7 +578,7 @@
 					</div>
 					<i>До 48 часов без<br> подзарядки</i>
 				</li>
-				<li>
+				<li class="anim" data-svg="b-4-watch-arrow-1-animate" data-cont=".b-5" data-delay="1500">
 					<div>
 						<!-- <img style="margin-top: 32px; margin-bottom: 5px;" src="i/b_4/2.png"> -->
 						<svg style="margin-top: 32px; margin-bottom: 5px;" width="49px" height="81px" viewBox="0 0 49 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -588,8 +588,9 @@
 						           attributeName="transform"
 								   type="rotate"
 						           dur="1.5s"
-						           begin="b-4-battery-green-animate.end + 0.3s"
+						           begin="infinity"
 						           fill="freeze"
+						           restart="whenNotActive"
 						           repeatCount="1"
 						           calcMode="spline"
 						           values="-135 24.5 39; -95 24.5 39; -105 24.5 39; -98 24.5 39; -101 24.5 39"
@@ -632,7 +633,7 @@
 					</div>
 					<i>Яркий дизайн -<br>Ваш ребенок с<br> удовольствием будет<br> их носить</i>
 				</li>
-				<li>
+				<li class="anim" data-svg="b-4-in-yan-animate" data-cont=".b-5" data-delay="3300">
 					<i style="margin-top: 40px; display: block; margin-bottom: 14px;">Для него</i>
 					<div>
 						<!-- <img style="margin-bottom: 10px;" src="i/b_4/3.png"> -->
@@ -647,7 +648,8 @@
 					           	attributeName="transform"
 							   	type="rotate"
 					           	dur="0.7s"
-					           	begin="b-4-watch-arrow-1-animate.end + 0.3s"
+					           	begin="infinity"
+					           	restart="whenNotActive"
 					           	fill="freeze"
 					           	repeatCount="1"
 					           	calcMode="spline"
@@ -660,7 +662,7 @@
 					</div>
 					<i>Для неё</i>
 				</li>
-				<li>
+				<li class="anim" data-svg="b-4-focus-animate-1" data-cont=".b-5" data-delay="4400">
 					<div>
 						<!-- <img style="margin-top: 49px; margin-bottom: 12px;" src="i/b_4/4.png"> -->
 						<svg style="margin-top: 40px; margin-bottom: 12px;" width="102px" height="99px" viewBox="0 0 102 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -669,7 +671,8 @@
 				            	xlink:href="#b-4-focus"
 					           	attributeName="d"
 					           	dur="0.4s"
-					           	begin="b-4-in-yan-animate.end + 0.4s"
+					           	begin="infinity"
+					           	restart="whenNotActive"
 					           	fill="freeze"
 					           	repeatCount="1"
 					           	calcMode="spline"
@@ -697,7 +700,7 @@
 					</div>
 					<i>Компактность</i>
 				</li>
-				<li>
+				<li class="anim" data-svg="b-4-bashka-shest-1-animate" data-cont=".b-5" data-delay="5200">
 					<div>
 						<!-- <img style="margin-top: 39px; margin-bottom: 10px;" src="i/b_4/5.png"> -->
 						<svg style="margin-top: 39px; margin-bottom: 10px;" width="65px" height="82px" viewBox="0 0 65 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -707,7 +710,8 @@
 						           	attributeName="transform"
 								   	type="rotate"
 						           	dur="1.5s"
-						           	begin="b-4-focus-animate-2.end + 0.4s"
+						           	begin="infinity"
+						           	restart="whenNotActive"
 						           	fill="freeze"
 						           	repeatCount="1"
 						           	calcMode="spline"
@@ -751,7 +755,7 @@
 					</div>
 					<i>Не нужны<br>технические<br>знания</i>
 				</li>
-				<li>
+				<li class="anim" data-svg="b-4-kluch-na-13-shest-animate" data-cont=".b-5" data-delay="7100">
 					<div>
 						<!-- <img style="margin-top: 37px; margin-bottom: 10px;" src="i/b_4/6.png"> -->
 						<svg style="margin-top: 37px; margin-left: 13px; margin-bottom: 10px;" width="98px" height="100px" viewBox="0 0 98 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -761,7 +765,8 @@
 							           	attributeName="transform"
 									   	type="rotate"
 							           	dur="1.5s"
-							           	begin="b-4-bashka-shest-1-animate.end + 0.3s"
+							           	begin="infinity"
+							           	restart="whenNotActive"
 							           	fill="freeze"
 							           	repeatCount="1"
 							           	calcMode="spline"
@@ -791,17 +796,17 @@
 					</div>
 					<i>Легко<br> настраивать</i>
 				</li>
-				<li>
+				<li class="anim" data-svg="b-4-zaebis-animate" data-cont=".b-5" data-delay="8900">
 					<div>
 						<!-- <img style="margin-top: 37px; margin-bottom: 18px;" src="i/b_4/7.png"> -->
 						<svg style="margin-top: 37px; margin-bottom: 18px;" width="81px" height="95px" viewBox="0 0 81 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-						    <!-- <path fill="#009ACF" d="M0.7,84.5198687 L19.1512653,84.5198687 L19.1512653,42.5146849 L0.7,42.5146849 L0.7,84.5198687 L0.7,84.5198687 Z M9.92563265,45.9064078 C12.6142456,45.9064078 14.8283974,48.0458023 14.8283974,50.7591806 C14.8283974,53.4203786 12.6669635,55.6119534 9.92563265,55.6119534 C7.23701971,55.6119534 5.02286787,53.4725589 5.02286787,50.7591806 C5.07558577,48.0458023 7.23701971,45.9064078 9.92563265,45.9064078 L9.92563265,45.9064078 Z"></path> -->
 						    <path fill="#009ACF" d="M0,69.1669477 L18.4605952,69.1669477 L18.4605952,26.4957841 L0,26.4957841 L0,69.1669477 L0,69.1669477 Z M9.22357487,30.0168634 C11.9261092,30.0168634 14.1446075,32.2293423 14.1446075,34.9544688 C14.1446075,37.6795953 11.9395546,39.8920742 9.22357487,39.8920742 C6.5075951,39.8920742 4.31598766,37.6661046 4.31598766,34.9409781 C4.41010577,32.1214165 6.52104054,30.0168634 9.22357487,30.0168634 L9.22357487,30.0168634 Z M79.1398858,28.1011804 C79.1398858,28.1011804 85.1634449,13.4097808 65.3045235,17.1332209 C65.3045235,17.1332209 59.4826461,18.5362563 52.1683243,16.4317032 C52.1683243,16.4317032 52.1683243,16.6340641 51.764961,16.0269815 C51.764961,16.0269815 62.897789,20.762226 72.6322907,13.2074199 C72.6322907,13.2074199 77.2440782,8.98482293 71.2339645,6.25969646 C64.3095606,4.54637437 63.1129161,4.65430017 58.7969284,0.930860034 C54.3868227,-2.88701518 33.3178113,6.86677909 30.3060317,19.6424958 C30.3060317,19.6424958 27.2942522,28.8971332 22.2791014,29.0994941 L22.2791014,61.301855 C23.9866728,61.2074199 29.4051869,61.005059 35.1195008,63.0151771 C35.1195008,63.0151771 45.6472838,65.5244519 52.4775696,65.5244519 C52.4775696,65.5244519 66.3129319,65.8212479 70.6289195,62.6104553 C70.6289195,62.6104553 74.3398622,59.8988196 73.5331355,56.1753794 C73.5331355,56.1753794 72.8339724,53.7605396 74.635662,52.4519393 C74.635662,52.4519393 79.9466125,49.0252951 77.3381963,43.6964587 C77.3381963,43.6964587 75.9398701,41.2816189 78.1449229,39.163575 C78.1449229,39.163575 81.3583842,36.6543002 79.1533313,33.6323777 C79.1398858,33.5379427 77.6339961,31.0151771 79.1398858,28.1011804 L79.1398858,28.1011804 Z" transform="translate(0 15.6330523)" id="b-4-zaebis" ></path>
 						    <animate
 				            	xlink:href="#b-4-zaebis"
 					           	attributeName="d"
 					           	dur="0.5s"
-					           	begin="b-4-kluch-na-13-shest-animate.end + 0.4s"
+					           	begin="infinity"
+					           	restart="whenNotActive"
 					           	fill="freeze"
 					           	repeatCount="1"
 					           	calcMode="spline"
@@ -828,16 +833,17 @@
 					</div>
 					<i>Долговечный<br>материал</i>
 				</li>
-				<li>
-					<div>
+				<li class="anim" data-svg="b-4-medal-animate" data-cont=".b-5" data-delay="9700">
+					<div class="anim" data-svg="b-4-medal-animate-2" data-cont=".b-5" data-delay="10300">
 						<!-- <img style="margin-top: 38px; margin-bottom: 15px;" src="i/b_4/8.png"> -->
-						<svg style="margin-top: 30px; margin-bottom: 10px;" width="70px" height="111px" viewBox="0 0 70 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+						<svg style="margin-top: 30px; margin-bottom: 10px;" width="70px" height="121px" viewBox="0 0 70 121" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
 				            <path fill="#009ACF" d="M56.2631579,86.3157895 L56.2631579,86.3157895 C61.3684211,83.4736842 59.2631579,75.6842105 53.4210526,75.7894737 L53.4210526,75.7894737 C56.4210526,70.7894737 50.7368421,65.1052632 45.7368421,68.1052632 L45.7368421,68.1052632 C45.8421053,62.2631579 38.0526316,60.2105263 35.2105263,65.2631579 C32.3684211,60.1578947 24.5789474,62.2631579 24.6842105,68.1052632 L24.6842105,68.1052632 C19.6842105,65.1052632 14,70.7894737 17,75.7894737 L17,75.7894737 C11.1578947,75.6842105 9.10526316,83.4736842 14.1578947,86.3157895 L14.1578947,86.3157895 C9.05263158,89.1578947 11.1578947,96.9473684 17,96.8421053 L17,96.8421053 C14,101.842105 19.6842105,107.526316 24.6842105,104.526316 L24.6842105,104.526316 C24.5789474,110.368421 32.3684211,112.421053 35.2105263,107.368421 C38.0526316,112.473684 45.8421053,110.368421 45.7368421,104.526316 L45.7368421,104.526316 C50.7368421,107.526316 56.4210526,101.842105 53.4210526,96.8421053 L53.4210526,96.8421053 C59.3157895,96.9473684 61.3684211,89.1578947 56.2631579,86.3157895 L56.2631579,86.3157895 Z M50.7368421,82.3157895 L42.5263158,88.8947368 C42.3157895,89.0526316 42.2631579,89.3157895 42.3157895,89.5789474 L45.3157895,99.2631579 C45.4736842,99.8421053 44.8421053,100.315789 44.3684211,99.9473684 L35.6315789,93.6315789 C35.4210526,93.4736842 35.1052632,93.4736842 34.8947368,93.6315789 L26.6315789,100.052632 C26.1578947,100.421053 25.4736842,99.9473684 25.6315789,99.3684211 L28.4736842,89.6842105 C28.5263158,89.4210526 28.4736842,89.1578947 28.2631579,89 L19.8421053,82.5789474 C19.3684211,82.2105263 19.6315789,81.4736842 20.2105263,81.4736842 L30.2105263,81.1052632 C30.4736842,81.1052632 30.6842105,80.9473684 30.7894737,80.6842105 L34.5789474,70.5263158 C34.7894737,70 35.5263158,70 35.7368421,70.4736842 L40,80.4736842 C40.1052632,80.6842105 40.3157895,80.8421053 40.5789474,80.8421053 L50.3157895,81 C50.9473684,81.2105263 51.2105263,81.9473684 50.7368421,82.3157895 Z M0.473684211,11.3157895 L17.6315789,64.2105263 C19.0526316,66.0526316 21.7368421,65.6315789 22.7894737,64.2105263 C22.7894737,64.2105263 29.7368421,43.5263158 32.0526316,39.5263158 C32.4736842,38.7894737 32.4736842,37.8947368 32.0526316,37.1578947 L22.4736842,1.68421053 C22.4736842,1.68421053 20.8947368,-0.684210526 18.1052632,0.526315789 C15.3157895,1.73684211 2.89473684,7.21052632 1.94736842,7.73684211 C1,8.26315789 -0.315789474,10.1052632 0.473684211,11.3157895 Z M31.8421053,59.9473684 C31.0526316,59.5789474 30.7368421,58.6315789 31.1578947,57.8947368 L48.3684211,1.78947368 C49.3684211,-0.105263158 51.3157895,0.0526315789 53.1052632,1.21052632 C55.1052632,2.31578947 68.0526316,7.94736842 68.0526316,7.94736842 C70.1052632,8.78947368 69.7894737,11.2631579 68.5789474,13.2105263 C68.5789474,13.2631579 52.4736842,64.2631579 52.4736842,64.2631579 C52.4736842,64.2631579 50.2631579,69.0526316 48.1052632,64.5789474 C46.6842105,61.6842105 42.8421053,56.8421053 36.3684211,61.2631579 C35.9473684,61.5263158 35.4210526,61.5789474 34.9473684,61.4210526 L31.8421053,59.9473684 Z" id="b-4-medal"></path>
 				            <animate
 				            	xlink:href="#b-4-medal"
 					           	attributeName="d"
 					           	dur="0.3s"
-					           	begin="b-4-zaebis-animate.end + 0.4s"
+					           	begin="infinity"
+					           	restart="whenNotActive"
 					           	fill="freeze"
 					           	repeatCount="1"
 					           	calcMode="spline"
@@ -851,17 +857,18 @@
 					           	attributeName="transform"
 							   	type="translate"
 					           	dur="0.7s"
-					           	begin="b-4-medal-animate.end + 0.3s"
+					           	begin="infinity"
 					           	fill="freeze"
 					           	repeatCount="1"
 					           	calcMode="spline"
 					           	to="0 15"
 					           	keyTimes="0; 1"
-					           	keySplines="0.51,0,0.45,1.02">
+					           	keySplines="0.51,0,0.45,1.02"
+					           	id="b-4-medal-animate-2">
 					        </animateTransform>
 						</svg>
 					</div>
-					<i>Гарантии и<br> возврат</i>
+					<i style="margin-top: -10px; display: inline-block;">Гарантии и<br> возврат</i>
 				</li>
 			</ul>
 		</div>
@@ -869,7 +876,11 @@
 	<div class="b b-6 anim" data-offset="550" data-svg="b-5-circle-animate" data-delay="500">
 		<div class="blue"><h2>принцип работы часов:</h2></div>
 		<div class="b-block">
-			<div class="left left-1"></div>
+			<div class="left left-1">
+				<div class="b-back-monitor"></div>
+				<div class="b-monitor"></div>
+				<div class="b-monitor-screen"></div>
+			</div>
 			<div class="left left-2"></div>
 			<!-- <img class="line" src="i/line.png"> -->
 			<svg width="741px" class="line" height="256px" viewBox="0 0 741 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -899,6 +910,7 @@
 		           begin="b-5-circle-animate.begin + 0s"
 		           fill="freeze"
 		           repeatCount="1"
+		           onend='custom["monitor"]()'
 		           calcMode="spline"
 		           keyPoints="0; 1"
 		           keyTimes="0; 1"
@@ -1070,16 +1082,16 @@
 		<div class="blue-1"><h2>отзывы</h2></div>
 		<div class="b-block clearfix">
 			<!-- <img class="route-3" src="i/route-3.png"> -->
-			<svg class="route-3" width="260px" height="560px" viewBox="0 0 260 560" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+			<svg class="route-3" width="270px" height="560px" viewBox="0 0 260 560" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
 			    <defs></defs>
-			    <g transform="translate(15.0, 0.0)">
+			    <g transform="translate(25.0, 0.0)">
 				    <path style="opacity: 0.3;" d="M73.641834,0 C70.841834,21.8 64.241834,44.4 51.541834,68.4 C-71.958166,301 49.241834,517.7 217.441834,558.3" id="b-7-path-line" fill="none" stroke-dasharray="16" stroke="#0299CC" stroke-width="7"></path>
 				    <g  id="b-7-path-arrow-g" style="opacity:0;" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage" transform="translate(0.0, -19.0)" x="20" y="20">
 				    	<path d="M35,18.2 L51.8,2.8 C52.1,2.5 52.1,2 51.9,1.7 L50.7,0.4 C50.4,0.1 50,0 49.6,0.1 L0.3,18.3 C-7.21644966e-16,18.4 -7.21644966e-16,18.9 0.3,19 L49.6,37.2 C50,37.3 50.4,37.2 50.7,36.9 L51.9,35.6 C52.2,35.3 52.2,34.8 51.8,34.5 L35,19.1 C34.8,18.8 34.8,18.5 35,18.2 L35,18.2 Z" id="b-7-path-arrow" fill="#FA3F58"></path>
 				    </g>
 				</g>
 			    <g id="b-7-path-pin-g" style="opacity: 0;">
-	                <path d="M47,0.28125 C21.4,0.28125 0.5,21.08125 0.5,46.78125 C0.5,51.48125 1.2,56.08125 2.5,60.38125 C5.3,74.78125 22.4,104.48125 46.2,141.38125 C46.4,141.68125 46.7,141.78125 46.9,141.68125 L46.9,93.28125 L46.9,76.78125 C30.3,76.78125 16.9,63.38125 16.9,46.78125 C16.9,30.18125 30.3,16.78125 46.9,16.78125 C63.5,16.78125 76.9,30.18125 76.9,46.78125 C76.9,63.38125 63.5,76.78125 46.9,76.78125 L46.9,93.28125 L46.9,141.68125 C47.2,141.78125 47.5,141.68125 47.6,141.38125 C71.4,104.48125 88.5,74.78125 91.3,60.38125 C92.6,56.08125 93.3,51.48125 93.3,46.78125 C93.5,21.08125 72.7,0.28125 47,0.28125 L47,0.28125 Z" id="b-7-path-pin" transform="scale(0.4,0.4) translate(500,1095)" fill="#0299CC"></path>
+	                <path d="M47,0.28125 C21.4,0.28125 0.5,21.08125 0.5,46.78125 C0.5,51.48125 1.2,56.08125 2.5,60.38125 C5.3,74.78125 22.4,104.48125 46.2,141.38125 C46.4,141.68125 46.7,141.78125 46.9,141.68125 L46.9,93.28125 L46.9,76.78125 C30.3,76.78125 16.9,63.38125 16.9,46.78125 C16.9,30.18125 30.3,16.78125 46.9,16.78125 C63.5,16.78125 76.9,30.18125 76.9,46.78125 C76.9,63.38125 63.5,76.78125 46.9,76.78125 L46.9,93.28125 L46.9,141.68125 C47.2,141.78125 47.5,141.68125 47.6,141.38125 C71.4,104.48125 88.5,74.78125 91.3,60.38125 C92.6,56.08125 93.3,51.48125 93.3,46.78125 C93.5,21.08125 72.7,0.28125 47,0.28125 L47,0.28125 Z" id="b-7-path-pin" transform="scale(0.4,0.4) translate(525,1095)" fill="#0299CC"></path>
 	            </g>
 		        <animate 
 		           xlink:href="#b-7-path-pin-g"
