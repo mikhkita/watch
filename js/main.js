@@ -45,8 +45,8 @@ $(document).ready(function(){
 
     custom["monitor"] = function(){
         var nowY = 0,
-            step = 388,
-            slides = 10,
+            step = 393,
+            slides = 11,
             timer,
             dur = 50;
 

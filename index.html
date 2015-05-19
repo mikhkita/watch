@@ -30,7 +30,7 @@
 	<script type="text/javascript" src="js/jquery.svganim.min.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
-	<script type="text/javascript" src="js/KitProgress.js"></script>
+	<script type="text/javascript" src="js/KitReviews.js"></script>
 	<script type="text/javascript" src="js/jquery.parallax.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -389,9 +389,11 @@
 	<div class="b b-4">
 		<div class="b-back">
 			<div class="b-block anim" data-svg="b-3-hor-bar-animate" data-delay="500" data-offset="300">
+				<img src="i/b_3/left.png" alt="" class="b-4-left anim fadeLeft" data-anim="fadeLeft" data-cont=".b-4 .b-block" data-delay="5500">
+				<img src="i/b_3/right.png" alt="" class="b-4-right anim fadeRight" data-anim="fadeRight" data-cont=".b-4 .b-block" data-delay="1500">
 				<h2>Преимущества часов с GPS:</h2>
-				<div class="good anim" data-svg="b-3-hor-bar-animate-2" data-delay="3000" data-cont=".b-4 .b-block">
-					<div class="animated anim left flipInY" data-anim="flipInY" data-delay="2000" data-cont=".b-4 .b-block" style="display: inline-block;">
+				<div class="good anim" data-svg="b-3-hor-bar-animate-2" data-delay="3500" data-cont=".b-4 .b-block">
+					<div class="animated anim left flipInY" data-anim="flipInY" data-delay="2500" data-cont=".b-4 .b-block" style="display: inline-block;">
 						<img src="i/ok.png">
 						<p style="color: #30B048;">С часами:</p>
 					</div>
@@ -512,7 +514,7 @@
 				</div>
 				<ul>
 					<li class="clearfix" style="width: 942px;">
-						<div class="left anim fadeLeft" data-anim="fadeLeft" data-cont=".b-4 .b-block" data-delay="3000">
+						<div class="left anim fadeLeft" data-anim="fadeLeft" data-cont=".b-4 .b-block" data-delay="3500">
 							<img src="i/b_3/1.png">
 							<p style="margin-top: 16px;">Вы всегда знаете<br> где Ваш ребенок</p>
 						</div>
@@ -522,7 +524,7 @@
 						</div>
 					</li>
 					<li class="clearfix" style="width: 1050px;">
-						<div class="left anim fadeLeft" data-anim="fadeLeft" data-cont=".b-4 .b-block" data-delay="3500">
+						<div class="left anim fadeLeft" data-anim="fadeLeft" data-cont=".b-4 .b-block" data-delay="4000">
 							<img src="i/b_3/2.png">
 							<p style="margin-top: 8px;">Уверенность что<br> сможете быть рядом, если<br> понадобится</p>
 						</div>
@@ -532,7 +534,7 @@
 						</div>
 					</li>
 					<li class="clearfix" style="width: 940px;">
-						<div class="left anim fadeLeft" data-anim="fadeLeft" data-cont=".b-4 .b-block" data-delay="4000">
+						<div class="left anim fadeLeft" data-anim="fadeLeft" data-cont=".b-4 .b-block" data-delay="4500">
 							<img src="i/b_3/3.png">
 							<p style="margin-top: -6px;">Не страшно если<br> потеряется, Вы всегда<br> сможете его найти и<br> забрать домой</p>
 						</div>
@@ -542,7 +544,7 @@
 						</div>
 					</li>
 					<li class="clearfix" style="width: 808px;">
-						<div class="left anim fadeLeft" data-anim="fadeLeft" data-cont=".b-4 .b-block" data-delay="4500">
+						<div class="left anim fadeLeft" data-anim="fadeLeft" data-cont=".b-4 .b-block" data-delay="5000">
 							<img src="i/b_3/4.png">
 							<p>Может гулять где<br> хочет, он всегда под<br> присмотром</p>
 						</div>
@@ -570,6 +572,7 @@
                         		attributeName="width" 
                         		values="11.0059524; 66"		
                         		begin="infinity"
+                        		restart="whenNotActive"
                         		dur="1.2s"
 								fill="freeze"
 				           		repeatCount="1"
@@ -1145,26 +1148,52 @@
 		        	<mpath xlink:href="#b-7-path-line" />
 		        </animateMotion>
 			</svg>
-			<div class="left-1 clearfix">
-				<img class="girl-1" src="i/comment-1.png">
-				<h5>Имя Фамилия</h5>
-				<h6>01.01.2015</h6>
-				<img class="grey-line" src="i/grey-line.png">
-				<img class="quote-1" src="i/quote-1.png">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.<br><br> 
+			<ul class="b-reviews">
+				<li class="b-review clearfix">
+					<div class="left-1 clearfix">
+						<img class="girl-1" src="i/comment-1.png">
+						<h5>Имя Фамилия</h5>
+						<h6>01.01.2015</h6>
+						<img class="grey-line" src="i/grey-line.png">
+						<img class="quote-1" src="i/quote-1.png">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.<br><br> 
 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
-			</div>
-			<div class="left-2">
-				<img class="girl-2" src="i/comment-2.png">
-				<h5>Имя Фамилия</h5>
-				<h6>01.01.2015</h6>
-				<img class="grey-line-2" src="i/grey-line-2.png">
-				<img class="quote-2" src="i/quote-2.png">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.<br><br> 
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+					</div>
+					<div class="left-2">
+						<img class="girl-2" src="i/comment-2.png">
+						<h5>Имя Фамилия</h5>
+						<h6>01.01.2015</h6>
+						<img class="grey-line-2" src="i/grey-line-2.png">
+						<img class="quote-2" src="i/quote-2.png">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.<br><br> 
 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
-			</div>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+					</div>
+				</li>
+				<li class="b-review clearfix">
+					<div class="left-1 clearfix">
+						<img class="girl-1" src="i/comment-1.png">
+						<h5>Имя Фамилия</h5>
+						<h6>01.01.2015</h6>
+						<img class="grey-line" src="i/grey-line.png">
+						<img class="quote-1" src="i/quote-1.png">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.<br><br> 
+
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+					</div>
+					<div class="left-2">
+						<img class="girl-2" src="i/comment-2.png">
+						<h5>Имя Фамилия</h5>
+						<h6>01.01.2015</h6>
+						<img class="grey-line-2" src="i/grey-line-2.png">
+						<img class="quote-2" src="i/quote-2.png">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.<br><br> 
+
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 	<div class="b b-9">

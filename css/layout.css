@@ -743,6 +743,20 @@ input:-moz-placeholder {
 		height: 660px;
 		text-align: center;
 	}	
+		.b-4-left,
+		.b-4-right{
+			position: absolute;
+			top: 391px;
+		}
+		.b-4-left{
+			left: -160px;
+		
+			border: 2px solid #FFF;
+			border-radius: 200px;
+}
+		.b-4-right{
+			right: -160px;
+		}
 		.b-4 .b-block h2{
 			color: #09C;
 			text-transform: uppercase;
@@ -899,20 +913,20 @@ input:-moz-placeholder {
 			    -ms-transition: opacity 300ms ease-out;
 			   	 -o-transition: opacity 300ms ease-out;
 					transition: opacity 300ms ease-out;
-			-webkit-transform: scale(1.05,1.05);
-			   -moz-transform: scale(1.05,1.05);
-			    -ms-transform: scale(1.05,1.05);
-			   	 -o-transform: scale(1.05,1.05);
-					transform: scale(1.05,1.05);
+			-webkit-transform: scale(1.02,1.02);
+			   -moz-transform: scale(1.02,1.02);
+			    -ms-transform: scale(1.02,1.02);
+			   	 -o-transform: scale(1.02,1.02);
+					transform: scale(1.02,1.02);
 			opacity: 0;
 			background-repeat: no-repeat;
 			background-image: url('../i/map-sprite.png');
 			width: 253px;
-			height: 388px;
+			height: 393px;
 			position: absolute;
 			background-position: 50% 0px;
-			right: 23px;
-  			top: -27px;
+			right: 22px;
+  			top: -32px;
   			z-index: 5;
 		}
 		.b-6 .b-monitor-screen{
@@ -1176,6 +1190,16 @@ input:-moz-placeholder {
 					line-height: 22px;
 					font-size: 15px;
 					font-weight: 400;
+				}
+			.b-reviews{
+				width: 100%;
+			}
+				.b-review{
+					display: none;
+					width: 100%;
+					position: absolute;
+					left: 0px;
+					top: 0px;
 				}
 .b-9{
 	
